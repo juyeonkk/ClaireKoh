@@ -50,6 +50,56 @@
     color: black;
     font-size: 13px;
 }
+        
+        
+
+        
+        
+        
+        
+        
+.greyy{
+    position: relative;
+}
+
+.imagee {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+
+.middlee {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms- transform: translate(-50%,-50%);
+}
+
+.greyy:hover .imagee {
+    opacity: 0.2;
+}
+
+.greyy:hover .middlee {
+    opacity: 1;
+}
+
+.textt {
+    color: black;
+    font-size: 13px;
+}
+        
+        
+        
+        
+        
+
     </style>
 </head>
 
@@ -96,12 +146,22 @@
                 
         
             <div class="col-md-4 portfolio-item">
+                
                 <a href="serthouse.html">
-                    <img class="img-responsive" src="img/haha.jpg" alt="">
+                    <div class="greyy">
+                    <div class="imagee">
+                        <img class="img-responsive" src="img/haha.jpg" alt="serthouse">
+                </div>
+                    <div class="middlee">
+                            <div class="textt">Sert House</div>
+                            </div>
+                    </div>
                 </a>
                 
                 
             </div>
+            
+            
             <div class="col-md-4 portfolio-item">
                 <a href="motion.html">
                     <img class="img-responsive" src="img/1.jpg" alt="">
